@@ -8,26 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		F05C588A2B1E7339005F56B5 /* SwiftUIiOSTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C58892B1E7339005F56B5 /* SwiftUIiOSTestApp.swift */; };
-		F05C588C2B1E7339005F56B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C588B2B1E7339005F56B5 /* ContentView.swift */; };
 		F05C588E2B1E733A005F56B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F05C588D2B1E733A005F56B5 /* Assets.xcassets */; };
 		F05C58922B1E733A005F56B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F05C58912B1E733A005F56B5 /* Preview Assets.xcassets */; };
-		F05C58992B1E73C0005F56B5 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C58982B1E73C0005F56B5 /* JSONManager.swift */; };
 		F05C589B2B1E73D7005F56B5 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C589A2B1E73D7005F56B5 /* SearchBarView.swift */; };
 		F05C589D2B1E73F4005F56B5 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C589C2B1E73F4005F56B5 /* UIApplication.swift */; };
 		F05C589F2B1E742C005F56B5 /* vendors.json in Resources */ = {isa = PBXBuildFile; fileRef = F05C589E2B1E742C005F56B5 /* vendors.json */; };
+		F08E16822B2A01340075BDF3 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08E16812B2A01340075BDF3 /* NetworkingManager.swift */; };
+		F08E16842B2A01440075BDF3 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08E16832B2A01440075BDF3 /* APIError.swift */; };
+		F08E16872B2A015A0075BDF3 /* VendorDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08E16862B2A015A0075BDF3 /* VendorDataModel.swift */; };
+		F08E16902B2A02660075BDF3 /* VendorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08E168F2B2A02660075BDF3 /* VendorListView.swift */; };
+		F08E16922B2A02910075BDF3 /* VendorListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08E16912B2A02910075BDF3 /* VendorListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F05C58862B1E7339005F56B5 /* SwiftUIiOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIiOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05C58892B1E7339005F56B5 /* SwiftUIiOSTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIiOSTestApp.swift; sourceTree = "<group>"; };
-		F05C588B2B1E7339005F56B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F05C588D2B1E733A005F56B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F05C588F2B1E733A005F56B5 /* SwiftUIiOSTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIiOSTest.entitlements; sourceTree = "<group>"; };
 		F05C58912B1E733A005F56B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F05C58982B1E73C0005F56B5 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 		F05C589A2B1E73D7005F56B5 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		F05C589C2B1E73F4005F56B5 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		F05C589E2B1E742C005F56B5 /* vendors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vendors.json; sourceTree = "<group>"; };
+		F08E16812B2A01340075BDF3 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		F08E16832B2A01440075BDF3 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		F08E16862B2A015A0075BDF3 /* VendorDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorDataModel.swift; sourceTree = "<group>"; };
+		F08E168F2B2A02660075BDF3 /* VendorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorListView.swift; sourceTree = "<group>"; };
+		F08E16912B2A02910075BDF3 /* VendorListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +66,11 @@
 		F05C58882B1E7339005F56B5 /* SwiftUIiOSTest */ = {
 			isa = PBXGroup;
 			children = (
-				F05C58892B1E7339005F56B5 /* SwiftUIiOSTestApp.swift */,
-				F05C588B2B1E7339005F56B5 /* ContentView.swift */,
-				F05C58982B1E73C0005F56B5 /* JSONManager.swift */,
-				F05C589A2B1E73D7005F56B5 /* SearchBarView.swift */,
-				F05C589C2B1E73F4005F56B5 /* UIApplication.swift */,
-				F05C589E2B1E742C005F56B5 /* vendors.json */,
-				F05C588D2B1E733A005F56B5 /* Assets.xcassets */,
+				F08E16802B2A01230075BDF3 /* Networking */,
+				F08E16852B2A014E0075BDF3 /* Model */,
+				F08E16882B2A01620075BDF3 /* Scenes */,
+				F08E16942B2A0BD30075BDF3 /* Data */,
+				F08E16932B2A0BBE0075BDF3 /* Other */,
 				F05C588F2B1E733A005F56B5 /* SwiftUIiOSTest.entitlements */,
 				F05C58902B1E733A005F56B5 /* Preview Content */,
 			);
@@ -79,6 +83,75 @@
 				F05C58912B1E733A005F56B5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F08E16802B2A01230075BDF3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F08E16812B2A01340075BDF3 /* NetworkingManager.swift */,
+				F08E16832B2A01440075BDF3 /* APIError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F08E16852B2A014E0075BDF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F08E16862B2A015A0075BDF3 /* VendorDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F08E16882B2A01620075BDF3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F05C58892B1E7339005F56B5 /* SwiftUIiOSTestApp.swift */,
+				F08E16892B2A016B0075BDF3 /* VenderList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F08E16892B2A016B0075BDF3 /* VenderList */ = {
+			isa = PBXGroup;
+			children = (
+				F08E168F2B2A02660075BDF3 /* VendorListView.swift */,
+				F08E16912B2A02910075BDF3 /* VendorListViewModel.swift */,
+				F05C589A2B1E73D7005F56B5 /* SearchBarView.swift */,
+				F08E168A2B2A01750075BDF3 /* Components */,
+			);
+			path = VenderList;
+			sourceTree = "<group>";
+		};
+		F08E168A2B2A01750075BDF3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F08E168C2B2A01880075BDF3 /* Extension */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F08E168C2B2A01880075BDF3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F05C589C2B1E73F4005F56B5 /* UIApplication.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F08E16932B2A0BBE0075BDF3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F05C588D2B1E733A005F56B5 /* Assets.xcassets */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F08E16942B2A0BD30075BDF3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F05C589E2B1E742C005F56B5 /* vendors.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,10 +226,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F05C589B2B1E73D7005F56B5 /* SearchBarView.swift in Sources */,
-				F05C588C2B1E7339005F56B5 /* ContentView.swift in Sources */,
-				F05C58992B1E73C0005F56B5 /* JSONManager.swift in Sources */,
+				F08E16902B2A02660075BDF3 /* VendorListView.swift in Sources */,
+				F08E16922B2A02910075BDF3 /* VendorListViewModel.swift in Sources */,
+				F08E16872B2A015A0075BDF3 /* VendorDataModel.swift in Sources */,
+				F08E16822B2A01340075BDF3 /* NetworkingManager.swift in Sources */,
 				F05C589D2B1E73F4005F56B5 /* UIApplication.swift in Sources */,
 				F05C588A2B1E7339005F56B5 /* SwiftUIiOSTestApp.swift in Sources */,
+				F08E16842B2A01440075BDF3 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

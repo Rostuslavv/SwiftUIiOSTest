@@ -1,28 +1,21 @@
 //
-//  ContentView.swift
-//  iOSMiddleTestTask
+//  VendorListView.swift
+//  SwiftUIiOSTest
 //
 //  Created by Rostyslav Dydiak on 01.12.2023.
 //
 
 import SwiftUI
 
-struct ContentView: View {
-    private var cards: Cards = Bundle.main.decode(file: "vendors.json")
-    @State private var serchTerm = ""
-    
-    var filterName: [Vendor] {
-        guard !serchTerm.isEmpty else { return cards.vendors}
-        guard serchTerm.count > 2 else { return cards.vendors}
-        
-        return cards.vendors.filter { $0.companyName.localizedStandardContains(serchTerm) }
-    }
+struct VendorListView: View {
+    @StateObject var viewModel = VendorListViewModel()
     
     var body: some View {
-        SearchBarView(searchText: $serchTerm)
+        SearchBarView(searchText: $viewModel.searchText)
+            .zIndex(1)
         
-        if serchTerm.count >= 3 {
-            if serchTerm != "" && cards.vendors.filter( { $0.companyName.lowercased().contains(self.serchTerm.lowercased())}).count == 0 {
+        if viewModel.searchText.count >= 3 {
+            if viewModel.searchText != "" && viewModel.cards.vendors.filter( { $0.companyName.lowercased().contains(viewModel.searchText.lowercased())}).count == 0 {
                 
                 VStack {
                     Spacer()
@@ -39,7 +32,7 @@ struct ContentView: View {
         }
         
         List {
-            ForEach(filterName, id: \.companyName) { card in
+            ForEach(viewModel.filterName, id: \.companyName) { card in
                 
                 VStack(alignment: .leading, content: {
                     AsyncImage(
@@ -67,7 +60,7 @@ struct ContentView: View {
                                         .padding(.trailing, 10)
                                 }
                                 .overlay(alignment: .topTrailing) {
-                                    Image("bookmark")
+                                    Image("Bookmark")
                                         .foregroundColor(.white)
                                         .font(.title2)
                                         .padding(.top, 16)
@@ -85,7 +78,7 @@ struct ContentView: View {
                         .bold()
                     HStack {
                         ForEach(card.categories, id: \.name) { categorie in
-                            Image("Vector")
+                            Image("Categorie")
                                 .frame(width: 22, height: 22)
                             Text("\(categorie.name)")
                                 .lineLimit(1)
@@ -109,9 +102,12 @@ struct ContentView: View {
             }
         }
         .listStyle(GroupedListStyle())
+        .padding(.top, -10)
+        .background(.clear)
+        .scrollContentBackground(.hidden)
     }
 }
 
 #Preview {
-    ContentView()
+    VendorListView()
 }
